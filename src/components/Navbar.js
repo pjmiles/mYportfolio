@@ -1,19 +1,18 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Hammburger from "./hammburger/Hammbuger";
-const Navbar = ({ open }) => {
+const Navbar = () => {
   return (
     <nav className="navbar ">
       <div className="container">
+        <a className="navbar-brand" href="#">
+          Ponmile Adebisi
+        </a>
 
-      <a className="navbar-brand" href="#">
-        Ponmile Adebisi
-      </a>
-      
-      <Hammburger />
+        <Hammburger />
 
-      <div className="collapse navbar-collapse" open={open}>
-        {/* <ul className="navbar-nav m-auto">
+        <div className="collapse navbar-collapse">
+          {/* <ul className="navbar-nav m-auto">
           <li className="nav-item active">
             <a className="nav-link" href="#">
               Home <span className="sr-only"></span>

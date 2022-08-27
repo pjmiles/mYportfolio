@@ -21,7 +21,7 @@ const StyledHammbuber = styled.span`
   span {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? "#800080" : "#fff")};
+    background-color: ${({ open }) => (open ? "#800080" : "#000000")};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
