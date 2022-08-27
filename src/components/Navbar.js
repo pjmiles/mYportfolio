@@ -1,13 +1,14 @@
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import Hammburger from "./hammburger/Hammbuger";
 const Navbar = () => {
   return (
     <nav className="navbar ">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="">
           Ponmile Adebisi
-        </a>
+        </Link>
 
         <Hammburger />
 

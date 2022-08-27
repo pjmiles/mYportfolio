@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledHammbuber = styled.span`
+const StyledHammburger = styled.span`
   display: none;
   width: 2rem;
   height: 2rem;
@@ -21,7 +21,7 @@ const StyledHammbuber = styled.span`
   span {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? "#800080" : "#000000")};
+    background-color: ${({ open }) => (open ? "#8b0080" : "#800000")};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -42,4 +42,4 @@ const StyledHammbuber = styled.span`
   }
 `;
 
-export default StyledHammbuber;
+export default StyledHammburger;

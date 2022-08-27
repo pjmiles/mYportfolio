@@ -8,7 +8,7 @@ export const Header = () => {
             <h1>Software development</h1>
             <Typed
               className="typed-text"
-              strings={["Software Engineer", "React", "NodeJS", "MongoDB"]}
+              strings={["My Skills", "HTML5", "CSS3", "JavaScript", "ReactJS", "NodeJS", "ExpressJS", "MongoDB"]}
               typeSpeed={40}
               backSpeed={60}
               loop

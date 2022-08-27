@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const NavLinks = ({ open }) => {
   const NavItems = styled.ul`
@@ -14,14 +15,14 @@ const NavLinks = ({ open }) => {
     @media (max-width: 768px) {
       position: fixed;
       flex-flow: column nowrap;
-      background: red;
+      background: #443355;
       transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
       top: 0;
       right: 0;
       height: 100vh;
-      width: 180px;
+      width: 200px;
       padding-top: 60px;
-      padding-left: 10px;
+      padding-left: 50px;
 
       a {
         color: #fcfcfc;
@@ -31,19 +32,16 @@ const NavLinks = ({ open }) => {
   return (
     <NavItems open={open}>
       <li>
-        <a href="/">Home</a>
+        <Link to="about">About</Link>
       </li>
       <li>
-        <a href="/about">About</a>
+        <Link to="">Skills</Link>
       </li>
       <li>
-        <a href="/skills">Skills</a>
+        <Link to="">Projects</Link>
       </li>
       <li>
-        <a href="/projects">Projects</a>
-      </li>
-      <li>
-        <a href="/contact">Contact</a>
+        <Link to="">Contact</Link>
       </li>
     </NavItems>
   );

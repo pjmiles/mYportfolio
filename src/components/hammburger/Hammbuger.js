@@ -1,6 +1,6 @@
 import { useState } from "react";
 import StyledLinks from "../NavLinks";
-import StyledHammbuber from "./Hammburger.styled";
+import StyledHammburger from "./Hammburger.styled";
 const Hammburger = () => {
   const [open, setOpen] = useState(false);
 
@@ -10,11 +10,11 @@ const Hammburger = () => {
 
   return (
     <>
-      <StyledHammbuber open={open} onClick={handleToggle}>
+      <StyledHammburger open={open} onClick={handleToggle}>
         <span />
         <span />
         <span />
-      </StyledHammbuber>
+      </StyledHammburger>
       <StyledLinks open={open} />
     </>
   );
