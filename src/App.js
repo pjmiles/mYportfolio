@@ -3,7 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import { Header } from './components/Header';
-import About from './components/About';
+import About from './components/about/About';
 
 function App() {
   return (
@@ -13,7 +13,6 @@ function App() {
         <Route path='/' element={<Header />} />
         <Route path='/about' element={<About />}/>
       </Routes>
-      {/* <Header /> */}
     </div>
   );
 }

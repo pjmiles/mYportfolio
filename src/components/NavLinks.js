@@ -10,6 +10,11 @@ const NavLinks = ({ open }) => {
     li {
       padding: 18px 18px;
       font-size: 20px;
+      text-decoration: none;
+    }
+
+    a {
+      text-decoration: none; //to remove default text decoration associated with Link
     }
 
     @media (max-width: 768px) {
@@ -26,6 +31,7 @@ const NavLinks = ({ open }) => {
 
       a {
         color: #fcfcfc;
+        text-decoration: none;
       }
     }
   `;

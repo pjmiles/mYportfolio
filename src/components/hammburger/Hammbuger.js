@@ -1,6 +1,6 @@
 import { useState } from "react";
 import StyledLinks from "../NavLinks";
-import StyledHammburger from "./Hammburger.styled";
+import StyledHammburger from "./HammburgerStyle";
 const Hammburger = () => {
   const [open, setOpen] = useState(false);
 
