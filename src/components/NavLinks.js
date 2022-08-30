@@ -26,8 +26,9 @@ const NavLinks = ({ open }) => {
       right: 0;
       height: 100vh;
       width: 200px;
-      padding-top: 60px;
+      padding-top: 50px;
       padding-left: 50px;
+      opacity: 0.8;
 
       a {
         color: #fcfcfc;

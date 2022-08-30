@@ -23,7 +23,7 @@ body{
 
 
 .navbar-nav > li > a {
-    color: var(--primary-color) !important;
+    color: var(--primary-color);
     margin-right: 0.75rem;
     margin-left: 0.75rem;
     border-top: 0.1875rem;
@@ -53,7 +53,11 @@ body{
     /* background: url(backgrd2.jpg) no-repeat; */
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 90vh;
+}
+
+.header-text {
+    font-weight: 620;
 }
 
 .main-info {
