@@ -18,6 +18,7 @@ body{
     --btn-color: rgb(136, 49, 136);
     --primary-yellow: rgb(182, 182, 130);
     --primary-dark: rgb(27, 26, 26);
+    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -48,11 +49,11 @@ body{
 
 .header-wrapper {
     position: relative;
-    background: #1f1f1f;
+    /* background: #1f1f1f; */
     /* background: url(backgrd2.jpg) no-repeat; */
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 80vh;
 }
 
 .main-info {
@@ -76,7 +77,7 @@ body{
 /* Typed text */
 .typed-text {
     font-size: 2rem;
-    color: #fff;
+    color: var(--btn-color);
 }
 
 .btn-main-contact {
