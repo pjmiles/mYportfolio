@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import { Header } from './components/Header';
 import About from './components/about/About';
@@ -11,7 +11,7 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Header />} />
+        <Route exact path='/' element={<Header />} />
         <Route path='/about' element={<About />}/>
         <Route path='/skills' element={<Skills />}/>
       </Routes>

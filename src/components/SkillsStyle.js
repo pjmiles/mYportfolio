@@ -9,4 +9,5 @@ export const SkillSectionStyle = styled.div`
   justify-content: center;
   margin: 0 auto;
   box-shadow: var(--box-shadow);
+  
 `

@@ -9,7 +9,6 @@
 
 body{
     font-family: "Roboto Condesed", sans-serif;
-    /* background: #1f1f1f; */
 }
 
 :root {
@@ -23,35 +22,27 @@ body{
 }
 
 
-.navbar-nav > li > a {
-    color: var(--primary-color);
-    margin-right: 0.75rem;
-    margin-left: 0.75rem;
-    border-top: 0.1875rem;
-}
-
-.navbar-brand {
-    color: var(--primary-alt);
-}
-
 .navbar {
     border-bottom: 1px solid #eee;
 }
 
-/* .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-    border-top: 0.1875rem solid var(--primary-yellow);
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
 }
 
-.navbar-nav > li > a:hover {
-    border-top: 0.1875rem solid var(--primary-yellow);
-} */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+    margin-top: 15px;
+}
 
 /* Header styling */
 
 .header-wrapper {
     position: relative;
-    /* background: #1f1f1f; */
-    /* background: url(backgrd2.jpg) no-repeat; */
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -99,4 +90,12 @@ body{
 .skill-icon {
     width: 11.875rem;
     height: 11.25rem;
+}
+
+/* app media query */
+@media (max-width: 760px) {
+    .skill-icon {
+        width: 9.875rem;
+        height: 8.25rem;
+    }
 }
