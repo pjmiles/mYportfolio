@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import { Header } from './components/Header';
 import About from './components/about/About';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Header />} />
         <Route path='/about' element={<About />}/>
+        <Route path='/skills' element={<Skills />}/>
       </Routes>
     </div>
   );

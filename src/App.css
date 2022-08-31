@@ -19,6 +19,7 @@ body{
     --primary-yellow: rgb(182, 182, 130);
     --primary-dark: rgb(27, 26, 26);
     --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    --secondary-shadow: #a17a69;
 }
 
 
@@ -92,4 +93,10 @@ body{
     padding: 10px 12px;
     color: white;
     margin-top: 2rem;
+}
+
+/* Skill Icon */
+.skill-icon {
+    width: 11.875rem;
+    height: 11.25rem;
 }
