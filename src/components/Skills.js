@@ -1,4 +1,4 @@
-import { SkillSectionStyle } from "./SkillsStyle";
+// import { section } from "./SkillsStyle";
 import {
   FaHtml5,
   FaCss3,
@@ -11,7 +11,7 @@ import { SiPostgresql, SiMongodb } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <SkillSectionStyle>
+    <section>
       <FaHtml5 className="skill-icon" />
       <FaCss3 className="skill-icon" />
       <FaBootstrap className="skill-icon" />
@@ -20,7 +20,7 @@ const Skills = () => {
       <FaNodeJs className="skill-icon" />
       <SiPostgresql className="skill-icon" />
       <SiMongodb className="skill-icon" />
-    </SkillSectionStyle>
+    </section>
   );
 };
 

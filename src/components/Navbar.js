@@ -1,14 +1,15 @@
-import { NavLink } from "react-router-dom";
-import Hammburger from "./hammburger/Hammbuger";
+// import { NavLink } from "react-router-dom";
+// import Hammburger from "./hammburger/Hammbuger";
 
 const Navbar = () => {
   return (
     <nav className="navbar ">
       <div className="container">
-        <NavLink className="navbar-brand" to="">
+        {/* <NavLink className="navbar-brand" to="">
           Ponmile Adebisi
-        </NavLink>
-        <Hammburger />
+        </NavLink> */}
+        {/* <Hammburger /> */}
+        Navbar
       </div>
     </nav>
   );

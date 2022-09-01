@@ -1,0 +1,8 @@
+.about {
+    background: var(--primary-yellow);
+}
+
+.my-image {
+    width: 300px;
+    height: 300px;
+}
