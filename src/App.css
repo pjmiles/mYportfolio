@@ -21,7 +21,7 @@ body{
     --secondary-shadow: #a17a69;
 }
 
-
+/* 
 .navbar {
     border-bottom: 1px solid #eee;
 }
@@ -41,7 +41,7 @@ body{
 
 /* Header styling */
 
-.header-wrapper {
+/* .header-wrapper {
     position: relative;
     background-size: cover;
     background-position: center;
@@ -71,7 +71,7 @@ body{
 }
 
 /* Typed text */
-.typed-text {
+/* .typed-text {
     font-size: 2rem;
     color: var(--btn-color);
 }
@@ -87,15 +87,15 @@ body{
 }
 
 /* Skill Icon */
-.skill-icon {
+/* .skill-icon {
     width: 11.875rem;
     height: 11.25rem;
 }
 
 /* app media query */
-@media (max-width: 760px) {
+/* @media (max-width: 760px) {
     .skill-icon {
         width: 9.875rem;
         height: 8.25rem;
     }
-}
+}     */
