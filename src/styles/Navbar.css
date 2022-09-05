@@ -1,0 +1,27 @@
+.nav-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px;
+    background: var(--primary-alt);
+}
+
+.nav-side {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
