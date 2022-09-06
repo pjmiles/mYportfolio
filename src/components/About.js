@@ -6,11 +6,15 @@ const About = () => {
     <section id="about">
       <div className="about-container">
         <div className="about-header">
-          <h1 className="text">Hi, I'm Ponmile</h1>
-          <br />I love building amazing app
+          <h1 className="top-text">Hi, I'm Ponmile</h1>
           <p className="about-bio">
-            I specializes in react and love building stidis hdsn sjdvg\sjs bvgs
-            dsdvsghd nmkvhjs sjksvhdjks sdjvhjks sjkfhvsjkd shj shjk
+            I am an ex-sales executive who loves building things with code.
+            After, few months of self-teaching I got an internship with Robots
+            Limited as a Software Engineer where I gained industry experience
+            working with teams and senior Software Engineer on different
+            projects. I am currently seeking a full-time role where I can
+            contribute my skills both in coding and business to help a company
+            achieve their goals.
           </p>
         </div>
         <div className="hero-image">

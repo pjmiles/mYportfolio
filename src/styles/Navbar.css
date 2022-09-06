@@ -27,3 +27,11 @@
     color: var(--primary-color);
     cursor: pointer;
 }
+
+.hammburger {
+    display: none;
+}
+
+@media (max-width: 760px) {
+   
+}

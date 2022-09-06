@@ -12,5 +12,26 @@
     height: 200px;
     border-radius: 150px;
     margin-top: 50px;
-    margin-left: 30px;
+}
+
+.top-text {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 760px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .my-image {
+        margin-top: 20px;
+        
+    }
+    .hero-image{
+        border-bottom: 1px solid;
+        background-color: rgba(145, 208, 233, 0.24);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        width: 100%;
+        text-align: center;
+    }
 }
