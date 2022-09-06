@@ -3,5 +3,39 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+   
+    padding: 20px;
 }
+
+.project-image {
+    width: 400px;
+    padding: 20px 20px;
+    box-shadow: var( --box-shadow);
+    margin: 0 10px;
+}
+
+.project-header-text {
+    text-align: center;
+}
+
+figure:hover>span {
+    bottom: -36px;
+    opacity: -1;
+}
+
+
+.hover figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.hover figure:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* figure:hover {
+    background: red;
+} */
