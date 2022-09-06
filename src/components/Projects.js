@@ -1,33 +1,33 @@
-import '../styles/Projects.css'
+import "../styles/Projects.css";
 
 const data = [
   {
     id: 1,
     picture: "twitter clone",
     title: "Twiter-Clone",
-    github: "urlhere",
-    demo: "",
+    github: "",
+    demo: "https://react-twitter-clone-gamma.vercel.app",
   },
   {
     id: 2,
     picture: "url-shortner",
     title: "Url-Shortner",
     github: "urlhere",
-    demo: "",
+    demo: "https://url-shortner-alpha-one.vercel.app",
   },
   {
     id: 3,
     picture: "blog without auth",
     title: "Blog site",
     github: "urlhere",
-    demo: "",
+    demo: "https://pjmiles-blog.vercel.app",
   },
   {
     id: 4,
     picture: "image search",
     title: "Image-Uploads",
     github: "urlhere",
-    demo: "",
+    demo: "https://react-image-post.vercel.app",
   },
 ];
 
@@ -44,8 +44,17 @@ const Projects = () => {
               </div>
               <h2>{title}</h2>
               <div>
-                <a href={github} target="_blank" rel="noreferrer" className="btn">github</a>
-                <a href={demo} target="_blank" rel="noreferrer" className="btn">demo</a>
+                <a
+                  href={github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn"
+                >
+                  github
+                </a>
+                <a href={demo} target="_blank" rel="noreferrer" className="btn">
+                  demo
+                </a>
               </div>
             </article>
           );
