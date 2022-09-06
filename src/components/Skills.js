@@ -11,7 +11,7 @@ import { SiPostgresql, SiMongodb } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <section>
+    <section id="skills">
       <FaHtml5 className="skill-icon" />
       <FaCss3 className="skill-icon" />
       <FaBootstrap className="skill-icon" />

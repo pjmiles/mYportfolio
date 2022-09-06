@@ -32,6 +32,10 @@
     display: none;
 }
 
+.active {
+    background: var(--primary-color);
+}
+
 @media (max-width: 760px) {
    
 }
