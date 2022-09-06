@@ -11,18 +11,14 @@
     width: 400px;
     padding: 20px 20px;
     box-shadow: var( --box-shadow);
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .project-header-text {
     text-align: center;
 }
 
-figure:hover>span {
-    bottom: -36px;
-    opacity: -1;
-}
-
+/* project section image hover effect */
 
 .hover figure img {
     -webkit-transform: scale(1);
@@ -36,6 +32,11 @@ figure:hover>span {
     transform: scale(1.2);
 }
 
-/* figure:hover {
-    background: red;
-} */
+.project-span {
+    text-align: center;
+    text-decoration: none;
+}
+
+.project-span:hover {
+    color: var(--primary-yellow);
+}

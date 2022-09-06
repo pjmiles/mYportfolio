@@ -9,36 +9,36 @@ const data = [
     id: 1,
     pics: twitterProject,
     title: "Twiter-Clone",
-    github: "",
+    github: "https://github.com/pjmiles/react-twitter-clone",
     demo: "https://react-twitter-clone-gamma.vercel.app",
   },
   {
     id: 2,
     pics: blogProject,
     title: "Blog site",
-    github: "urlhere",
+    github: "https://github.com/pjmiles/pjmiles-blog",
     demo: "https://pjmiles-blog.vercel.app",
   },
   {
     id: 3,
     pics: imageUpload,
     title: "Image-Uploads",
-    github: "urlhere",
+    github: "https://github.com/pjmiles/react-image-post",
     demo: "https://react-image-post.vercel.app",
   },
   {
     id: 4,
     pics: todoapp,
     title: "Todo-App",
-    github: "urlhere",
-    demo: "https://react-image-post.vercel.app",
+    github: "https://github.com/pjmiles/react-todo-app",
+    demo: "https://react-todo-app-six-delta.vercel.app",
   },
   {
     id: 5,
     pics: urlShortner,
     title: "Url-Shortner",
-    github: "urlhere",
-    demo: "https://react-todo-app-six-delta.vercel.app",
+    github: "https://github.com/pjmiles/url-shortner",
+    demo: "https://url-shortner-alpha-one.vercel.app/",
   },
 ];
 
@@ -52,18 +52,12 @@ const Projects = () => {
             <article key={id} className="project-item">
               <div className="image-container hover">
                 <a href={demo} rel="noreferrer" target="_blank">
-                  <figure><img src={pics} alt="project" className="project-image" /></figure>
-                <span>{title}</span>
+                  <figure>
+                    <img src={pics} alt="project" className="project-image" />
+                  </figure>
                 </a>
-              </div>
-              <div>
-                <a
-                  href={github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn"
-                >
-                  github
+                <a href={github} target="_blank" rel="noreferrer" className="project-span">
+                  <h2>{title}</h2>
                 </a>
               </div>
             </article>
