@@ -3,15 +3,15 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-   
+    margin: auto;
     padding: 20px;
 }
 
 .project-image {
-    width: 400px;
+    width: 500px;
     padding: 20px 20px;
     box-shadow: var( --box-shadow);
-    margin: 10px 10px;
+    margin: 15px;
 }
 
 .project-header-text {

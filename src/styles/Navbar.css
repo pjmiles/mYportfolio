@@ -1,9 +1,17 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-dark);
+    overflow: hidden;
+}
+
 .nav-section {
     display: flex;
     width: 100%;
     justify-content: space-between;
     padding: 15px;
-    background: var(--primary-alt);
 }
 
 .nav-side {
@@ -23,8 +31,8 @@
 
 .brand-name {
     font-size: 20px;
-    font-weight: 700;
-    color: var(--primary-color);
+    font-weight: var(--bold-font);
+    color: var(--primary-alt);
     cursor: pointer;
 }
 
