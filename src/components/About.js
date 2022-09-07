@@ -11,7 +11,7 @@ const About = () => {
             I am an ex-sales executive who loves building things with code.
             After, few months of self-teaching I got an internship with Robots
             Limited as a Software Engineer where I gained industry experience
-            working with teams and senior Software Engineer on different
+            working with teams and senior Software Engineers on different
             projects. I am currently seeking a full-time role where I can
             contribute my skills both in coding and business to help a company
             achieve their goals.
