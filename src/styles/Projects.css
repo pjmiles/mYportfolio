@@ -1,5 +1,6 @@
 .projects-section {
     background-color: var(--primary-dark);
+    margin: 100px;
 }
 
 .projects-container {

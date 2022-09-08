@@ -20,7 +20,7 @@ body{
     --primary-green: rgb(111, 228, 183);
     --primary-alt: #4756df;
     --primary-dark: rgb(27, 26, 26);
-    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    --box-shadow: 0 3px 7px 0 var(--btn-color);
     --primary-shadow: #8b8eaf;
     --secondary-color: #ff7235;
     --normal-font: 400;
