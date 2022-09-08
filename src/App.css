@@ -36,6 +36,10 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    background-color: var(--primary-dark);
+}
+
 /* 
 .navbar {
     border-bottom: 1px solid #eee;

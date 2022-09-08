@@ -1,10 +1,14 @@
+/* .about-section {
+    
+} */
+
 .about-container {
-    background: var(--primary-color);
+    background: var(--primary-dark);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 20px;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
 }
 
 .about-bio {

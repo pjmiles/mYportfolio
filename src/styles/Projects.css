@@ -1,3 +1,7 @@
+.projects-section {
+    background-color: var(--primary-dark);
+}
+
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -10,12 +14,13 @@
 .project-image {
     width: 500px;
     padding: 20px 20px;
-    box-shadow: var( --box-shadow);
+    /* box-shadow: var( --primary-dark); */
     margin: 15px;
 }
 
 .project-header-text {
     text-align: center;
+    color: var(--primary-color);
 }
 
 /* project section image hover effect */

@@ -60,7 +60,6 @@ const Skills = () => {
     <>
       <h1 className="skills-heading">Top Skills</h1>
       <section className="skills-section" id="skills">
-        {/* <h1 className="skills-header-text">Skiils</h1> */}
         {data.map(({ icon }) => {
           return (
             <div className="skills-set">

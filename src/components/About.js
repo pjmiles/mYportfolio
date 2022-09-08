@@ -3,7 +3,7 @@ import profileImage from "../images/profileImage.jpg";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" className="about-section">
       <div className="about-container">
           <h1 className="top-text">Hi, I'm Ponmile</h1>
         <div className="about-header">
