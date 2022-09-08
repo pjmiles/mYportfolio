@@ -2,8 +2,16 @@
     background: var(--primary-color);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px;
+    margin-top: 5rem;
+}
+
+.about-bio {
+    /* border: 1px solid; */
+    line-height: var(--line-height);
+    padding: 10px 10px;
+    max-width: 500px;
 }
 
 .my-image {
