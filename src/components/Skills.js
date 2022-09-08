@@ -58,7 +58,7 @@ const data = [
 const Skills = () => {
   return (
     <>
-      <h1 className="skills-heading">Top Skills</h1>
+      <h1 className="skills-heading">My Top Skills</h1>
       <section className="skills-section" id="skills">
         {data.map(({ icon }) => {
           return (

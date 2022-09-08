@@ -19,9 +19,7 @@
 .skill-icon {
     font-size: 70px;
     text-align: center;
-    box-shadow: var(--box-shadow);
     margin: 10px;
     padding: 10px;
-    border-radius: 11px;
     color: var(--secondary-color);
 }
