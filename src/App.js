@@ -1,20 +1,19 @@
-import { Routes, Route } from 'react-router-dom';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar';
-import { Header } from './components/Header';
-import About from './components/About';
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import "./App.css";
 
 function App() {
   return (
-    <div>
+    <main>
       <Navbar />
-      <Routes>
-        <Route path='/' element={<Header />} />
-        <Route path='/about' element={<About />}/>
-      </Routes>
-      {/* <Header /> */}
-    </div>
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </main>
   );
 }
 

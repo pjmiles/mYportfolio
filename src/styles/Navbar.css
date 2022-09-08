@@ -1,0 +1,55 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-dark);
+    overflow: hidden;
+}
+
+.nav-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.nav-side {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin: 0 10px;
+    color: var(--primary-color);
+    font-weight: var(--normal-font);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: var(--bolder-font);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.hammburger {
+    display: none;
+}
+
+.active {
+    background-color: var(--btn-color);
+    color: var(--primary-color);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 760px) {
+   
+}

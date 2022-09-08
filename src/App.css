@@ -5,54 +5,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 body{
     font-family: "Roboto Condesed", sans-serif;
-    /* background: #1f1f1f; */
 }
 
 :root {
-    --primary-color: #fff;
-    --primary-alt: #0000ff;
-    --btn-color: rgb(136, 49, 136);
-    --primary-yellow: rgb(182, 182, 130);
+    --primary-color: #ffff;
+    --bg-color: #fcfcfc;
+    --btn-color: rgb(148, 107, 148);
+    --primary-green: rgb(111, 228, 183);
+    --primary-alt: #4756df;
     --primary-dark: rgb(27, 26, 26);
+    --box-shadow: 0 3px 7px 0 var(--btn-color);
+    --primary-shadow: #8b8eaf;
+    --secondary-color: #ff7235;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
 }
 
-
-.navbar-nav > li > a {
-    color: var(--primary-color) !important;
-    margin-right: 0.75rem;
-    margin-left: 0.75rem;
-    border-top: 0.1875rem;
+html {
+    scroll-behavior: smooth;
 }
 
-.navbar-brand {
-    color: var(--primary-alt);
+main {
+    background-color: var(--primary-dark);
 }
 
+/* 
 .navbar {
     border-bottom: 1px solid #eee;
 }
 
-/* .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-    border-top: 0.1875rem solid var(--primary-yellow);
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
 }
 
-.navbar-nav > li > a:hover {
-    border-top: 0.1875rem solid var(--primary-yellow);
-} */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+    margin-top: 15px;
+}
 
 /* Header styling */
 
-.header-wrapper {
+/* .header-wrapper {
     position: relative;
-    background: #1f1f1f;
-    /* background: url(backgrd2.jpg) no-repeat; */
     background-size: cover;
     background-position: center;
     height: 90vh;
+}
+
+.header-text {
+    font-weight: 620;
 }
 
 .main-info {
@@ -74,9 +90,9 @@ body{
 }
 
 /* Typed text */
-.typed-text {
+/* .typed-text {
     font-size: 2rem;
-    color: #fff;
+    color: var(--btn-color);
 }
 
 .btn-main-contact {
@@ -88,3 +104,17 @@ body{
     color: white;
     margin-top: 2rem;
 }
+
+/* Skill Icon */
+/* .skill-icon {
+    width: 11.875rem;
+    height: 11.25rem;
+}
+
+/* app media query */
+/* @media (max-width: 760px) {
+    .skill-icon {
+        width: 9.875rem;
+        height: 8.25rem;
+    }
+}     */
