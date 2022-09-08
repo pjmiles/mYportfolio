@@ -1,9 +1,9 @@
-import React from "react";
+import '../styles/Contact.css'
 
 const Contact = () => {
   return (
     <section className="form-section" id="contact">
-      <h1>Contact me</h1>
+      <h1 className="form-header-text">Contact me</h1>
       <form className="form-container">
         <div className="form-control">
           <label htmlFor="name" />
@@ -29,7 +29,7 @@ const Contact = () => {
             type="text"
             name="message"
             placeholder="message"
-            className="form-input"
+            className="form-input message"
           />
         </div>
         <div className="form-submit">
