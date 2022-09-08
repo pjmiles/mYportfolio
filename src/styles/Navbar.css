@@ -21,6 +21,9 @@ nav {
 
 .nav-item {
     margin: 0 10px;
+    color: var(--primary-color);
+    font-weight: var(--normal-font);
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -31,8 +34,8 @@ nav {
 
 .brand-name {
     font-size: 20px;
-    font-weight: var(--bold-font);
-    color: var(--primary-alt);
+    font-weight: var(--bolder-font);
+    color: var(--primary-color);
     cursor: pointer;
 }
 
@@ -41,8 +44,10 @@ nav {
 }
 
 .active {
-    background-color: var(--primary-color);
+    background-color: var(--btn-color);
+    color: var(--primary-color);
     padding: 10px 10px;
+    border-radius: 5px;
 }
 
 @media (max-width: 760px) {

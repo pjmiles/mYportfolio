@@ -24,7 +24,7 @@
 }
 
 .about-bio {
-    color: var(--btn-color);
+    color: var(--primary-color);
     line-height: var(--line-height);
     /* padding: 10px 10px; */
     /* max-width: 500px; */

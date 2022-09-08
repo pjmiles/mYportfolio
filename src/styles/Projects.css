@@ -14,13 +14,22 @@
 .project-image {
     width: 500px;
     padding: 20px 20px;
-    /* box-shadow: var( --primary-dark); */
     margin: 15px;
 }
 
 .project-header-text {
     text-align: center;
     color: var(--primary-color);
+    font-size: 20px;
+}
+
+.project-title {
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.project-title:hover {
+    color: var(--secondary-color);
 }
 
 /* project section image hover effect */
@@ -44,4 +53,10 @@
 
 .project-span:hover {
     color: var(--primary-yellow);
+}
+
+@media (max-width: 760px) {
+    .project-image {
+        width: 320px;
+    }
 }

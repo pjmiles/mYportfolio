@@ -57,7 +57,7 @@ const Projects = () => {
                   </figure>
                 </a>
                 <a href={github} target="_blank" rel="noreferrer" className="project-span">
-                  <h2>{title}</h2>
+                  <h2 className="project-title">{title}</h2>
                 </a>
               </div>
             </article>

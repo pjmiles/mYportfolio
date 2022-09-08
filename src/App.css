@@ -14,11 +14,11 @@ body{
 }
 
 :root {
-    --primary-color: #fff;
+    --primary-color: #ffff;
     --bg-color: #fcfcfc;
+    --btn-color: rgb(148, 107, 148);
+    --primary-green: rgb(111, 228, 183);
     --primary-alt: #4756df;
-    --btn-color: rgb(136, 49, 136);
-    --primary-yellow: rgb(182, 182, 130);
     --primary-dark: rgb(27, 26, 26);
     --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     --primary-shadow: #8b8eaf;
