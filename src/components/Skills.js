@@ -16,7 +16,7 @@ import {
   SiMysql,
 } from "react-icons/si";
 
-const data = [
+const icons = [
   {
     icon: <FaHtml5 />,
   },
@@ -60,10 +60,10 @@ const Skills = () => {
     <>
       <h1 className="skills-heading">My Top Skills</h1>
       <section className="skills-section" id="skills">
-        {data.map(({ icon }) => {
+        {icons.map(({ icon }) => {
           return (
             <div className="skills-set">
-              <div className="skill-icon">{icon}</div>
+              <div key={icon} className="skill-icon">{icon}</div>
             </div>
           );
         })}

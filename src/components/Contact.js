@@ -21,7 +21,7 @@ const Contact = () => {
       setNotify("Please try again later!");
     }
     e.target.reset();
-    setNotify("");
+    // setNotify("");
   };
 
   return (
