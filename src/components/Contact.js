@@ -3,26 +3,23 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
+    try {
+      emailjs.sendForm(
         "service_zl7te1h",
         "template_oeivq8p",
         form.current,
         "sWEP46cF27ED3ybZ-"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("message sent")
-        },
-        (error) => {
-          console.log(error.text);
-        }
       );
+      console.log("message sent");
+    } catch (error) {
+      console.log(error.text);
+    }
+    e.target.reset();
   };
 
   return (
@@ -36,6 +33,7 @@ const Contact = () => {
             name="name"
             placeholder="Your Name"
             className="form-input"
+            required
           />
         </div>
         <div className="form-control">
@@ -45,6 +43,7 @@ const Contact = () => {
             name="email"
             placeholder="Email"
             className="form-input"
+            required
           />
         </div>
         <div className="form-control">
@@ -54,6 +53,7 @@ const Contact = () => {
             name="message"
             placeholder="message"
             className="form-input message"
+            required
           />
         </div>
         <div className="form-submit">
