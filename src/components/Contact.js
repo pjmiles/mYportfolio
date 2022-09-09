@@ -1,9 +1,9 @@
 import "../styles/Contact.css";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  
+  const [notify, setNotify] = useState("");
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -15,15 +15,18 @@ const Contact = () => {
         form.current,
         "sWEP46cF27ED3ybZ-"
       );
-      console.log("message sent");
+      setNotify("Your message was sent successfully!");
     } catch (error) {
       console.log(error.text);
+      setNotify("Please try again later!");
     }
     e.target.reset();
+    setNotify("");
   };
 
   return (
     <section className="form-section" id="contact">
+      {notify ? <span className="notification">{notify}</span> : ""}
       <h1 className="form-header-text">Contact me</h1>
       <form className="form-container" ref={form} onSubmit={sendEmail}>
         <div className="form-control">
