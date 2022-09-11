@@ -27,13 +27,13 @@ const Footer = () => {
   return (
     <footer>
       Footer section
-      <div>
+      {/* <div>
         {links.map(({ id, icon, href }) => {
           <ul>
             <a href={href} >{icon}</a>
           </ul>;
         })}
-      </div>
+      </div> */}
     </footer>
   );
 };

@@ -71,7 +71,7 @@ const Skills = () => {
   return (
     <>
       <h1 className="skills-heading">My Top Skills</h1>
-      <section className="skills-section" id="skills">
+      <section className="skills-section" id="skills" smooth>
         {icons.map(({ icon, id }) => {
           return (
             <div className="skills-set" key={id} >

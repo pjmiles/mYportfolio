@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="form-section" id="contact">
+    <section className="form-section" id="contact" smooth>
       {notify ? <span className="notification">{notify}</span> : ""}
       <h1 className="form-header-text">Contact me</h1>
       <form className="form-container" ref={form} onSubmit={sendEmail}>
