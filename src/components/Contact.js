@@ -15,13 +15,12 @@ const Contact = () => {
         form.current,
         "sWEP46cF27ED3ybZ-"
       );
-      setNotify("Your message was sent successfully!");
+      setNotify("Your message was sent successfully!"); // to display message on sending mail
     } catch (error) {
       console.log(error.text);
       setNotify("Please try again later!");
     }
     e.target.reset();
-    // setNotify("");
   };
 
   return (

@@ -1,5 +1,5 @@
 import { FaGithub, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
-
+import { HashLink as Link } from "react-router-hash-link";
 const links = [
   {
     id: 1,
@@ -25,15 +25,15 @@ const links = [
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer-section">
       Footer section
-      {/* <div>
+      <div>
         {links.map(({ id, icon, href }) => {
-          <ul>
-            <a href={href} >{icon}</a>
+          <ul key={id}>
+            <Link to={href} className="foot-icon">{icon}</Link>
           </ul>;
         })}
-      </div> */}
+      </div>
     </footer>
   );
 };
