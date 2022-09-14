@@ -5,18 +5,23 @@ import { FaBars } from "react-icons/fa";
 import "../styles/Navbar.css";
 const Navbar = () => {
   const [activeNav, setActiveNav] = useState("#");
-  const [displayMenu, setDisplayMenu] = useState("")
-  const toggle = () => {
+  const [displayMenu, setDisplayMenu] = useState(false);
+  const handleToggle = () => {
+    setDisplayMenu((prev) => !prev);
+  };
 
+  const closeMenu = () => {
+    setDisplayMenu(false)
   }
+
   return (
     <nav className="navbar ">
       <h1 className="brand-name">Ponmile Adebisi</h1>
-      <ul className="nav-side">
+      <ul className={`${displayMenu ? "show" : ""}`}>
         <li className="nav-item">
           <NavLink
             to="#about"
-            onClick={() => setActiveNav("#about")}
+            onClick={() => setActiveNav("#about") `${closeMenu()}`}
             className={activeNav === "#about" ? "active" : "nav-item"}
           >
             About
@@ -25,7 +30,7 @@ const Navbar = () => {
         <li className="nav-item">
           <NavLink
             to="#skills"
-            onClick={() => setActiveNav("#skills")}
+            onClick={() => setActiveNav("#skills")  `${closeMenu()}`}
             className={activeNav === "#skills" ? "active" : "nav-item"}
           >
             Skills
@@ -34,7 +39,7 @@ const Navbar = () => {
         <li className="nav-item">
           <NavLink
             to="#projects"
-            onClick={() => setActiveNav("#projects")}
+            onClick={() => setActiveNav("#projects") `${closeMenu()}`}
             className={activeNav === "#projects" ? "active" : "nav-item"}
           >
             Projects
@@ -43,7 +48,7 @@ const Navbar = () => {
         <li className="nav-item">
           <NavLink
             to="#contact"
-            onClick={() => setActiveNav("#contact")}
+            onClick={() => setActiveNav("#contact") `${closeMenu()}`}
             className={activeNav === "#contact" ? "active" : "nav-item"}
           >
             Contact
@@ -51,7 +56,9 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="burger-menu">
-        <FaBars className="hammburger" onClick={toggle} />
+        <span onClick={handleToggle}>
+          {displayMenu ? (<FaBars className="hammburger" />): (<FaBars className="hammburger" />)}
+        </span>
       </div>
     </nav>
   );
