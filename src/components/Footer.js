@@ -1,5 +1,6 @@
 import { FaGithub, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { AiFillLinkedin } from "react-icons/ai";
+import { ExternalLink } from "react-external-link";
 import "../styles/Footer.css";
 
 const Footer = () => {
@@ -8,46 +9,41 @@ const Footer = () => {
   return (
     <footer className="footer-section">
       <div className="footer-icons">
-        <a
+        <ExternalLink
           href="https://www.linkedin.com/in/ponmileadebisi/"
           target="_blank"
-          rel="noreferrer"
           className="foot-icon"
         >
           <AiFillLinkedin />
-        </a>
-        <a
+        </ExternalLink>
+        <ExternalLink
           href="https://www.instagram.com/ponmilejames/"
           target="_blank"
-          rel="noreferrer"
           className="foot-icon"
         >
           <FaInstagram />
-        </a>
-        <a
+        </ExternalLink>
+        <ExternalLink
           href="https://github.com/pjmiles"
           target="_blank"
-          rel="noreferrer"
           className="foot-icon"
         >
           <FaGithub />
-        </a>
-        <a
+        </ExternalLink>
+        <ExternalLink
           href="https://twitter.com/adebisiponmile"
           target="_blank"
-          rel="noreferrer"
           className="foot-icon"
         >
           <FaTwitter />
-        </a>
-        <a
+        </ExternalLink>
+        <ExternalLink
           href="https://web.facebook.com/oluwaponmile.j.adebisi/"
           target="_blank"
-          rel="noreferrer"
           className="foot-icon"
         >
           <FaFacebookF />
-        </a>
+        </ExternalLink>
         <p className="footer-text">
           Copyright &copy; {yearTxt} - Created by Ponmile Adebisi
         </p>
