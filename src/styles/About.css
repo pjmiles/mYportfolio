@@ -15,7 +15,7 @@
 }
 
 .about-header {
-    width: 25rem;
+    max-width: 32rem;
     padding: 40px;
     margin: 30px;
 }

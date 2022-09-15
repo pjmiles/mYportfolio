@@ -46,7 +46,7 @@ nav a {
 
 .burger-menu {
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     cursor: pointer;
     display: none;
 }
