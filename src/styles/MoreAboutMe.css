@@ -1,0 +1,13 @@
+.more-aboutme {
+    background-color: var(--primary-dark);
+    color: var(--bg-color);
+    text-align: justify;
+    max-width: 54rem;
+    line-height: var(--line-height);
+    margin: auto;
+    padding: 20px;
+}
+
+.more-aboutme h1 {
+    margin-bottom: 15px;
+}
