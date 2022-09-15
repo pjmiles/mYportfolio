@@ -4,7 +4,8 @@ import profileImage from "../images/profileImage.jpg";
 const About = () => {
   return (
     <section id="about" className="about-section">
-      <div className="about-container">
+     <img alt="ponmile" src={profileImage} className="my-image" />
+        
         <div className="about-header">
           <h1 className="top-text">About Me</h1>
           <p className="about-bio">
@@ -17,10 +18,9 @@ const About = () => {
             achieve their goals.
           </p>
         </div>
-        <div className="hero-image-container">
-          <img alt="ponmile" src={profileImage} className="my-image" />
-        </div>
-      </div>
+        {/* <div className="hero-image-container"> 
+        </div> */}
+    
     </section>
   );
 };
