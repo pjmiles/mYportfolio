@@ -56,6 +56,13 @@
     transform: var(--transition);
   }
 
+  /* nofification div */
+
+  .notification {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+  }
+
   @media(max-width: 760px) {
     .form-container {
         width: 90%;

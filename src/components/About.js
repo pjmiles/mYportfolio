@@ -4,22 +4,21 @@ import profileImage from "../images/profileImage.jpg";
 const About = () => {
   return (
     <section id="about" className="about-section">
-      <div className="about-container">
-        <div className="about-header">
-          <h1 className="top-text">About Me</h1>
-          <p className="about-bio">
-            I am an ex-sales executive who loves building things with code.
-            After, few months of self-teaching I got an internship with Robots
-            Limited as a Software Engineer where I gained industry experience
-            working with teams and senior Software Engineers on different
-            projects. I am currently seeking a full-time role where I can
-            contribute my skills both in coding and business to help a company
-            achieve their goals.
-          </p>
-        </div>
-        <div className="hero-image-container">
-          <img alt="ponmile" src={profileImage} className="my-image" />
-        </div>
+      <img alt="ponmile" src={profileImage} className="my-image" />
+
+      <div className="about-header">
+        <h1 className="top-text">About Me</h1>
+        <p className="about-bio">
+          My name is Ponmile Adebisi, a Software Engineer who is creative and
+          innovative. I love solving problems analytically implementing the
+          right strategies and technics. I have fundamental knowledge of
+          software design and development, API, Databases including frontend and
+          backend technologies. I am currently learning more on React,
+          Typescript, Vue, NextJS, Express and Python alongside other frontend
+          and backend technologies. My goal is to gain a good understanding of
+          current systems, and to be able to build on that as things inevitably
+          change.
+        </p>
       </div>
     </section>
   );

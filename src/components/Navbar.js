@@ -1,21 +1,64 @@
-// import { NavLink } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
 // import Hammburger from "./hammburger/Hammbuger";
-import { useState } from 'react';
-import { FaBars } from 'react-icons/fa'
-import '../styles/Navbar.css'
+import { useState } from "react";
+import { FaBars } from "react-icons/fa";
+import "../styles/Navbar.css";
 const Navbar = () => {
-  const [activeNav, setActiveNav] = useState('#')
+  const [activeNav, setActiveNav] = useState("#");
+  const [displayMenu, setDisplayMenu] = useState(false);
+  const handleToggle = () => {
+    setDisplayMenu((prev) => !prev);
+  };
+
+  const closeMenu = () => {
+    setDisplayMenu(false)
+  }
+
   return (
     <nav className="navbar ">
-      <div className="nav-section container">
-        <div className="brand-name">Ponmile Adebisi</div>
-        <FaBars className="hammburger" />
-        <ul className="nav-side">
-          <li className="nav-item"><a href='#about' onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : 'nav-item'}>About</a></li>
-          <li className="nav-item"><a href='#skills' onClick={() => setActiveNav('#skills')} className={activeNav === '#skills' ? 'active' : 'nav-item'}>Skills</a></li>
-          <li className="nav-item"><a href='#projects' onClick={() => setActiveNav('#projects')} className={activeNav === '#projects' ? 'active' : 'nav-item'}>Projects</a></li>
-          <li className="nav-item"><a href='#contact' onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : 'nav-item'}>Contact</a></li>
-        </ul>
+      <h1 className="brand-name">Ponmile Adebisi</h1>
+      <ul className={`${displayMenu ? "show" : ""}`}>
+        <li className="nav-item">
+          <NavLink
+            to="#about"
+            onClick={() => setActiveNav("#about") `${closeMenu()}`}
+            className={activeNav === "#about" ? "active" : "nav-item"}
+          >
+            About
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink
+            to="#skills"
+            onClick={() => setActiveNav("#skills")  `${closeMenu()}`}
+            className={activeNav === "#skills" ? "active" : "nav-item"}
+          >
+            Skills
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink
+            to="#projects"
+            onClick={() => setActiveNav("#projects") `${closeMenu()}`}
+            className={activeNav === "#projects" ? "active" : "nav-item"}
+          >
+            Projects
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink
+            to="#contact"
+            onClick={() => setActiveNav("#contact") `${closeMenu()}`}
+            className={activeNav === "#contact" ? "active" : "nav-item"}
+          >
+            Contact
+          </NavLink>
+        </li>
+      </ul>
+      <div className="burger-menu">
+        <span onClick={handleToggle}>
+          {displayMenu ? (<FaBars className="hammburger" />): (<FaBars className="hammburger" />)}
+        </span>
       </div>
     </nav>
   );

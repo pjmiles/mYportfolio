@@ -1,37 +1,42 @@
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     background-color: var(--primary-dark);
-    overflow: hidden;
-}
-
-.nav-section {
+    z-index: 1;
     display: flex;
-    width: 100%;
+    align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 1.5rem 3.5rem;
 }
 
-.nav-side {
+nav ul {
     display: flex;
-    list-style-type: none;
-}
+    gap: 1.9rem;
+} 
+
+nav ul li {
+    font-weight: var(--normal-font);
+  }
 
 .nav-item {
-    margin: 0 10px;
     color: var(--primary-color);
     font-weight: var(--normal-font);
     font-size: 14px;
     cursor: pointer;
 }
 
-.nav-item:hover {
-    color: var(--secondary-color);
-    transition: 0.3s;
-}
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
 
+  nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  
 .brand-name {
     font-size: 20px;
     font-weight: var(--bolder-font);
@@ -39,9 +44,13 @@ nav {
     cursor: pointer;
 }
 
-.hammburger {
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    cursor: pointer;
     display: none;
 }
+
 
 .active {
     background-color: var(--btn-color);
@@ -50,6 +59,32 @@ nav {
     border-radius: 5px;
 }
 
-@media (max-width: 760px) {
-   
+@media screen and (max-width: 760px) {
+   nav {
+    padding: 1.5rem 1rem;
+   }
+
+   nav ul {
+    position: fixed;
+    background-color: var(--primary-dark);
+    flex-direction: column;
+    top: 79px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+   nav ul li {
+    margin: 8px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
 }
