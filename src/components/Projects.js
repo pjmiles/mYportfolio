@@ -1,9 +1,9 @@
 import "../styles/Projects.css";
-import twitterProject from "../images/twitterclone.png";
-import blogProject from "../images/blogsite.png";
-import imageUpload from "../images/imageUpload.png";
-import urlShortner from "../images/urlshortner.png";
-import todoapp from "../images/todoapp.png";
+import twitterProject from "../assets/twitterclone.png";
+import blogProject from "../assets/blogsite.png";
+import imageUpload from "../assets/imageUpload.png";
+import urlShortner from "../assets/urlshortner.png";
+import todoapp from "../assets/todoapp.png";
 const data = [
   {
     id: 1,

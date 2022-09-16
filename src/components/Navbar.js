@@ -1,5 +1,4 @@
 import { HashLink as NavLink } from "react-router-hash-link";
-// import Hammburger from "./hammburger/Hammbuger";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import "../styles/Navbar.css";
