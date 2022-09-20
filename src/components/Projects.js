@@ -2,7 +2,7 @@ import "../styles/Projects.css";
 import twitterProject from "../assets/twitterclone.png";
 import blogProject from "../assets/blogsite.png";
 import imageUpload from "../assets/imageUpload.png";
-import urlShortner from "../assets/urlshortner.png";
+// import urlShortner from "../assets/urlshortner.png";
 import todoapp from "../assets/todoapp.png";
 const data = [
   {
@@ -11,7 +11,7 @@ const data = [
     title: "Twiter-Clone",
     github: "https://github.com/pjmiles/react-twitter-clone",
     demo: "https://react-twitter-clone-gamma.vercel.app",
-    desc: "A site built like Twitter where users needs to be authenticated before it can enjoy its functionality.",
+    desc: "A site like Twitter where users needs to be authenticated to perform function.",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const data = [
     title: "Blog site",
     github: "https://github.com/pjmiles/pjmiles-blog",
     demo: "https://pjmiles-blog.vercel.app",
-    desc: "A Blog site where users can post and comment to post without Authentication.",
+    desc: "A site where users can post and comment without Authentication.",
   },
   {
     id: 3,
@@ -37,40 +37,40 @@ const data = [
     demo: "https://react-todo-app-six-delta.vercel.app",
     desc: "A todo App where users can add tasks and delete it on completed",
   },
-  {
-    id: 5,
-    pics: urlShortner,
-    title: "Url-Shortner",
-    github: "https://github.com/pjmiles/url-shortner",
-    demo: "https://url-shortner-alpha-one.vercel.app/",
-    desc: "A site that should bring a shortened URL when authenticated. This site not compeleted.",
-  },
+  // {
+  //   id: 5,
+  //   pics: urlShortner,
+  //   title: "Url-Shortner",
+  //   github: "https://github.com/pjmiles/url-shortner",
+  //   demo: "https://url-shortner-alpha-one.vercel.app/",
+  //   desc: "A site that should bring a shortened URL when authenticated. This site not compeleted.",
+  // },
 ];
 
 const Projects = () => {
   return (
     <section className="projects-section" id="projects" smooth>
-      <h1 className="project-header-text">My Recent Work</h1>
+      <h1 className="project-header-text">Some of my recent projects</h1>
       <div className="projects-container">
         {data.map(({ id, pics, title, github, demo, desc }) => {
           return (
-            <article key={id} className="project-item">
-              <div className="image-container hover">
-                <a href={demo} rel="noreferrer" target="_blank">
-                  <figure>
-                    <img src={pics} alt="project" className="project-image" />
-                  </figure>
-                </a>
-                <a
-                  href={github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-span"
-                >
-                  <h2 className="project-title">{title}</h2>
-                </a>
-                  <p>{desc}</p>
-              </div>
+            <article key={id} className="project-container">
+              <figure className="project-card">
+                <div className="image-container hover">
+                  <a href={demo} rel="noreferrer" target="_blank">
+                    <img src={pics} alt={title} className="project-image" />
+                  </a>
+                  <a
+                    href={github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-span"
+                  >
+                    <h2 className="project-title">{title}</h2>
+                  </a>
+                </div>
+                <p className="project-details">{desc}</p>
+              </figure>
             </article>
           );
         })}

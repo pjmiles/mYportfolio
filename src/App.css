@@ -23,6 +23,8 @@ body{
     --box-shadow: 0 3px 7px 0 var(--btn-color);
     --primary-shadow: #8b8eaf;
     --secondary-color: #ff7235;
+    --normal-font-size: 14px;
+    --small-font-size: 11px;
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
