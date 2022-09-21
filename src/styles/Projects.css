@@ -18,7 +18,7 @@
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     padding: 40px;
-    gap: 2rem;gi t
+    gap: 2rem;
 }
 
 .projects-container h2 {
@@ -30,6 +30,7 @@
 .project-card > p {
     text-align: center;
     color: var(--primary-color);
+    padding: 5px;
 }
 
 .project-details {
@@ -38,13 +39,18 @@
 }
 
 .project-image {
-    /* width: 500px; */
-    /* padding: 20px 20px; */
     width: 100%;
     height: 75%;
-    /* padding: 0 10px; */
-    /* margin: 0 auto; */
 }
+.image-conatiner > h2 {
+    padding: 5px;
+}
+.project-title:hover {
+    color: var(--secondary-color);
+}
+
+
+
 /* 
 .photo {
     max-width: 31%;
@@ -79,7 +85,7 @@
 
 /* project section image hover effect */
 
-.hover figure img {
+/* .hover figure img {
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
@@ -98,7 +104,7 @@
 
 .project-span:hover {
     color: var(--primary-yellow);
-}
+} */
 
 @media (max-width: 760px) {
     .projects-container {
