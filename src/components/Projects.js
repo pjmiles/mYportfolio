@@ -11,7 +11,7 @@ const data = [
     title: "Twiter-Clone",
     github: "https://github.com/pjmiles/react-twitter-clone",
     demo: "https://react-twitter-clone-gamma.vercel.app",
-    desc: "A site like Twitter where users needs to be authenticated to perform function.",
+    desc: "A Twitter clone where user can signup, login and tweet.",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const data = [
     title: "Blog site",
     github: "https://github.com/pjmiles/pjmiles-blog",
     demo: "https://pjmiles-blog.vercel.app",
-    desc: "A site where users can post and comment without Authentication.",
+    desc: "A Site where User can post blog and comment.",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const data = [
     title: "Image-Uploads",
     github: "https://github.com/pjmiles/react-image-post",
     demo: "https://react-image-post.vercel.app",
-    desc: "A site that has image file upload, users can search and delete images",
+    desc: "Site where user can upload image file, search and delete",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const data = [
     title: "Todo-App",
     github: "https://github.com/pjmiles/react-todo-app",
     demo: "https://react-todo-app-six-delta.vercel.app",
-    desc: "A todo App where users can add tasks and delete it on completed",
+    desc: "A todo App that can add tasks and delete it on completed",
   },
   // {
   //   id: 5,
@@ -68,8 +68,11 @@ const Projects = () => {
                   >
                     <h2 className="project-title">{title}</h2>
                   </a>
+                  <span>
+                    <p className="project-details">{desc}</p>
+                  </span>
                 </div>
-                <p className="project-details">{desc}</p>
+                {/* <span className="project-details">{desc}</span> */}
               </figure>
             </article>
           );
