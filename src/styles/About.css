@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem; 
+    gap: 2.3rem;
+    max-width: 67rem; 
     margin: auto;
     padding: 20px 20px;
     text-align: justify;
@@ -13,12 +13,13 @@
 .about-section img {
     height: 17.5rem;
     width: 17.5rem;
+    margin-left: 6.5rem;
 }
 
 .about-header {
-    max-width: 32rem;
-    padding: 40px;
-    margin: 30px;
+    max-width: 40rem;
+    padding: 60px;
+    margin: 0 auto;
 }
 
 .about-header p {
@@ -47,11 +48,17 @@
     .about-section {
         flex-direction: column;
         gap: 0;
+        text-align: center;
     }
     .about-header {
-        width: 22rem;
+        max-width: 30rem;
         margin-top: -7px;
         /* margin: 10px */
+    }
+    .about-section img {
+        height: 15.5rem;
+        width: 15.5rem;
+        margin-left: 10px;
     }
    
     /* .about-container {
