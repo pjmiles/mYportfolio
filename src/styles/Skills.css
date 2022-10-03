@@ -9,7 +9,7 @@
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     padding: 10px 10px;
-    max-width: 55rem;
+    max-width: 53rem;
     margin: auto;
 }
 .skills-header-text {
@@ -17,16 +17,20 @@
 }
 
 .skill-icon {
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     color: var(--primary-color);
     box-shadow: var(--box-shadow);
 }
 
+.skill-icon > p {
+    font-size: 12px;
+}
+
 @media (max-width: 760px) {
     .skill-icon {
-        font-size: 50px
+        font-size: 48px
     }
 }

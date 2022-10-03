@@ -20,50 +20,62 @@ const icons = [
   {
     id: 1,
     icon: <FaHtml5 />,
+    text: "HTML5",
   },
   {
     id: 2,
     icon: <FaCss3 />,
+    text: "CSS3",
   },
   {
     id: 3,
     icon: <FaBootstrap />,
+    text: "Bootstrap",
   },
   {
     id: 4,
     icon: <DiJavascript1 />,
+    text: "JavaScript",
   },
   {
     id: 5,
     icon: <FaReact />,
+    text: "React",
   },
   {
     id: 6,
     icon: <FaNodeJs />,
+    text: "NodeJS",
   },
   {
     id: 7,
     icon: <SiExpress />,
+    text: "Express",
   },
   {
     id: 8,
     icon: <SiPostgresql />,
+    text: "PostgreSQL",
   },
   {
     id: 9,
     icon: <SiMysql />,
+    text: "MySQL",
   },
   {
     id: 10,
     icon: <SiMongodb />,
+    text: "MongoDB",
   },
   {
     id: 11,
     icon: <SiPython />,
+    text: "Python",
   },
   {
     id: 12,
     icon: <FaGitAlt />,
+    text: "Git",
   },
 ];
 
@@ -71,11 +83,14 @@ const Skills = () => {
   return (
     <>
       <h1 className="skills-heading">My Top Skills</h1>
-      <section className="skills-section" id="skills" >
-        {icons.map(({ icon, id }) => {
+      <section className="skills-section" id="skills">
+        {icons.map(({ icon, id, text }) => {
           return (
-            <div className="skills-set" key={id} >
-              <div className="skill-icon">{icon}</div>
+            <div className="skills-set" key={id}>
+              <div className="skill-icon">
+                {icon}
+                <p>{text}</p>
+              </div>
             </div>
           );
         })}

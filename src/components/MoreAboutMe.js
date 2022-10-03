@@ -3,7 +3,7 @@ import '../styles/MoreAboutMe.css'
 const MoreAboutMe = () => {
   return (
     <section className="more-aboutme">
-      <h1>More Aboute Me</h1>
+      <h1>More About Me</h1>
       <p>
         In my career I started out as a Sales Executive where I gained
         experience in Sales, Marketing, Market Research and International
