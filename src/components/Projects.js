@@ -4,6 +4,8 @@ import blogProject from "../assets/blogsite.png";
 import imageUpload from "../assets/imageUpload.png";
 // import urlShortner from "../assets/urlshortner.png";
 import todoapp from "../assets/todoapp.png";
+import { ExternalLink } from "react-external-link";
+
 const data = [
   {
     id: 1,
@@ -57,22 +59,21 @@ const Projects = () => {
             <article key={id} className="project-container">
               <figure className="project-card">
                 <div className="image-container hover">
-                  <a href={demo} rel="noreferrer" target="_blank">
+                  <ExternalLink href={demo} rel="noreferrer" target="_blank">
                     <img src={pics} alt={title} className="project-image" />
-                  </a>
-                  <a
+                  </ExternalLink>
+                  <ExternalLink
                     href={github}
                     target="_blank"
                     rel="noreferrer"
                     className="project-span"
                   >
                     <h2 className="project-title">{title}</h2>
-                  </a>
+                  </ExternalLink>
                   <span>
                     <p className="project-details">{desc}</p>
                   </span>
                 </div>
-                {/* <span className="project-details">{desc}</span> */}
               </figure>
             </article>
           );
