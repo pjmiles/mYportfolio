@@ -13,7 +13,7 @@ const About = () => {
           innovative. I love solving problems analytically, implementing the
           right strategies and technics. I have fundamental knowledge of
           software design and development, API, Databases including frontend and
-          backend technologies. I am currently learning more on React,
+          backend technologies. I am currently learning JavaScript, React,
           Typescript, Vue, NextJS, Express and Python alongside other frontend
           and backend technologies. My goal is to gain a good understanding of
           current systems, and to be able to build on that as things inevitably
