@@ -2,11 +2,20 @@ import "../styles/Projects.css";
 import twitterProject from "../assets/twitterclone.png";
 import blogProject from "../assets/blogsite.png";
 import imageUpload from "../assets/imageUpload.png";
+import movieSearch from "../assets/movieSearch.png";
 // import urlShortner from "../assets/urlshortner.png";
 import todoapp from "../assets/todoapp.png";
 import { ExternalLink } from "react-external-link";
 
 const data = [
+  {
+    id: 0,
+    pics: movieSearch,
+    title: "Movie-Search",
+    github: "https://github.com/pjmiles/movie-search-app",
+    demo: "https://movie-search-app-iota.vercel.app/",
+    desc: "This site returns movies when users uses search box.",
+  },
   {
     id: 1,
     pics: twitterProject,
@@ -39,14 +48,6 @@ const data = [
     demo: "https://react-todo-app-six-delta.vercel.app",
     desc: "A todo App that can add tasks and delete it on completed",
   },
-  // {
-  //   id: 5,
-  //   pics: urlShortner,
-  //   title: "Url-Shortner",
-  //   github: "https://github.com/pjmiles/url-shortner",
-  //   demo: "https://url-shortner-alpha-one.vercel.app/",
-  //   desc: "A site that should bring a shortened URL when authenticated. This site not compeleted.",
-  // },
 ];
 
 const Projects = () => {
