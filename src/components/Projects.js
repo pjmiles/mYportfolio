@@ -53,7 +53,7 @@ const data = [
 const Projects = () => {
   return (
     <section className="projects-section" id="projects" smooth>
-      <h1 className="project-header-text">Some of my recent projects</h1>
+      <h1 className="project-header-text">Some of my projects</h1>
       <div className="projects-container">
         {data.map(({ id, pics, title, github, demo, desc }) => {
           return (
