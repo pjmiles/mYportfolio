@@ -1,5 +1,5 @@
 import "../styles/About.css";
-import profileImage from "../assets/profileImage.jpg";
+import profileImage from "../assets/ponmile_james_adebisi.jpg";
 
 const About = () => {
   return (
@@ -9,15 +9,12 @@ const About = () => {
       <div className="about-header">
         <h1 className="top-text">About Me</h1>
         <p className="about-bio">
-          My name is Ponmile Adebisi, a Software Engineer who is creative and
-          innovative. I love solving problems analytically, implementing the
-          right strategies and technics. I have fundamental knowledge of
-          software design and development, API, Databases including frontend and
-          backend technologies. I am currently learning JavaScript, React,
-          Typescript, Vue, NextJS, Express and Python alongside other frontend
-          and backend technologies. My goal is to gain a good understanding of
-          current systems, and to be able to build on that as things inevitably
-          change.
+          I'm <span>Ponmile Adebisi</span>, a Software Engineer who is creative
+          and innovative. I have fundamental knowledge of Software Design and
+          development, system architecture and infrastucture, API Design,
+          Databases including frontend and backend technologies. I am currently
+          keeping upto date with JavaScript, React, Typescript, Vue, NextJS,
+          Express and Python alongside other frontend and backend technologies.
         </p>
       </div>
     </section>
