@@ -32,6 +32,13 @@
     line-height: var(--line-height);
 }
 
+.about-bio span {
+    color: var(--btn-color);
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 /* for image */
 
 .my-image {
