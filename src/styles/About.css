@@ -2,24 +2,26 @@
     background: var(--primary-dark);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 2.3rem;
-    max-width: 67rem; 
-    margin: auto;
-    padding: 20px 20px;
+    max-width: 90%; 
+    margin: 10rem 5rem 20rem 5rem;
+    /* padding: 20px 20px; */
     text-align: justify;
+
 }
 
 .about-section img {
     height: 17.5rem;
     width: 17.5rem;
-    margin-left: 6.5rem;
+    margin-left: 15rem;
 }
 
 .about-header {
     max-width: 40rem;
     padding: 60px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .about-header p {
@@ -38,6 +40,19 @@
     font-weight: 800;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.more-aboutme{
+    margin-top: 15rem;
+}
+
+.separator {
+    height: 2px;
+    width: 70%;
+    margin: auto auto 5rem;
+    background-color: var(--btn-color);
+    text-align: center;
+    border: none;
+  }
 
 /* for image */
 
