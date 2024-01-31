@@ -1,17 +1,32 @@
 import "../styles/About.css";
 import profileImage from "../assets/ponmile_james_adebisi.jpg";
+import ReactTyped from "react-typed";
 
 const About = () => {
   return (
     <section id="about" className="about-section">
       <div>
-         <img alt="ponmile" src={profileImage} className="my-image" />
+        <img alt="ponmile" src={profileImage} className="my-image" />
       </div>
 
       <div className="about-header">
         <p className="about-bio">
-          Hey, I'm <span>Ponmile.</span>,
-        <p>A Software Developer. I provide custom solutions to Business needs.</p>
+          Hey, I'm{" "}
+          <span>
+            <ReactTyped
+              strings={["Ponmile"]}
+              typeSpeed={200}
+              backSpeed={100}
+              cursorChar=">"
+              showCursor={true}
+              loop
+            />
+          </span>
+          ,
+          <p>
+            A <span>Software Developer</span>. I provide custom solutions to
+            Business needs.
+          </p>
         </p>
       </div>
     </section>
