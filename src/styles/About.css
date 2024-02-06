@@ -36,7 +36,7 @@
 
 .about-bio span {
     color: var(--btn-color);
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 800;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -50,7 +50,6 @@
     width: 70%;
     margin: auto auto 5rem;
     background-color: var(--btn-color);
-    text-align: center;
     border: none;
   }
 

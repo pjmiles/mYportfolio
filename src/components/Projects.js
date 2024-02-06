@@ -4,7 +4,7 @@ import blogProject from "../assets/blogsite.png";
 import imageUpload from "../assets/imageUpload.png";
 import movieSearch from "../assets/movieSearch.png";
 // import urlShortner from "../assets/urlshortner.png";
-import todoapp from "../assets/todoapp.png";
+// import todoapp from "../assets/todoapp.png";
 import { ExternalLink } from "react-external-link";
 
 const data = [
@@ -39,14 +39,6 @@ const data = [
     github: "https://github.com/pjmiles/react-image-post",
     demo: "https://react-image-post.vercel.app",
     desc: "Site where user can upload image file, search and delete",
-  },
-  {
-    id: 4,
-    pics: todoapp,
-    title: "Todo-App",
-    github: "https://github.com/pjmiles/react-todo-app",
-    demo: "https://react-todo-app-six-delta.vercel.app",
-    desc: "A todo App that can add tasks and delete it on completed",
   },
 ];
 

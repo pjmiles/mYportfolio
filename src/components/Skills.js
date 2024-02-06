@@ -81,9 +81,9 @@ const icons = [
 
 const Skills = () => {
   return (
-    <>
+    <section id="skills">
       <h1 className="skills-heading">My Top Skills</h1>
-      <section className="skills-section" id="skills">
+      <div className="skills-section">
         {icons.map(({ icon, id, text }) => {
           return (
             <div className="skills-set" key={id}>
@@ -94,8 +94,8 @@ const Skills = () => {
             </div>
           );
         })}
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
