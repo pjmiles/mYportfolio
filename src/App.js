@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Seperator from "./components/Seperator";
 import "./App.css";
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
     <main>
       <Navbar />
       <About />
-      <MoreAboutMe />
+      <Seperator />
+      {/* <MoreAboutMe /> */}
       <Skills />
       <Projects />
       <Contact />
