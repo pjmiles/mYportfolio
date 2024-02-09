@@ -24,8 +24,9 @@ const About = () => {
           </span>
           ,
           <p>
-            A <span>Software Developer</span>. I provide custom solutions to
-            Business needs.
+            A <span>Software Developer</span>. I specialize in crafting
+            tailor-made software solutions to address the unique requirements of
+            businesses.
           </p>
         </p>
       </div>
