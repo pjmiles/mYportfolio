@@ -23,7 +23,8 @@
 .projects-container h2 {
     text-align: center;
     color: var(--primary-color);
-    font-size: var(--normal-font-size);
+    font-size: var(--bold-font-size);
+    margin-top: 20px;
 }
 
 .project-card > p {
@@ -34,7 +35,7 @@
 
 .project-details {
     margin-top: 15px;
-    font-size: var(--small-font-size);
+    font-size: var(--normal-font-size);
     color: var(--primary-color);
     text-align: center;
 }
@@ -47,6 +48,7 @@
 .image-conatiner > h2 {
     padding: 5px;
 }
+
 .project-title:hover {
     color: var(--secondary-color);
 }

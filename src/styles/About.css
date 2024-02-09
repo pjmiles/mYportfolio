@@ -24,14 +24,16 @@
     text-align: center;
 }
 
-.about-header p {
+.about-header > p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
+    font-size: var(--bold-font-size);
 }
 
 .about-bio {
     color: var(--primary-color);
     line-height: var(--line-height);
+   
 }
 
 .about-bio span {
