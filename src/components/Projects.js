@@ -3,6 +3,7 @@ import movieSearch from "../assets/movieSearch.png";
 import behiveERP from "../assets/behiveERP.jpg";
 import hrmApp from "../assets/hrmApp.jpg"
 import crmApp from "../assets/crmApp.jpg"
+import depara from "../assets/depara.jpg"
 import { ExternalLink } from "react-external-link";
 
 const data = [
@@ -12,26 +13,18 @@ const data = [
     title: "Custom ERP Application",
     github: "https://github.com/Gurugeeksroyalty-ltd",
     live: "https://www.begnh.com/",
-    desc: "An ERP application that manages business operations.",
+    desc: "An ERP application that manages business operations across different locations with levels of permissions.",
   },
   {
     id: 1,
-    pics: hrmApp,
-    title: "HRM Application",
-    github: "https://github.com/Gurugeeksroyalty-ltd",
-    live: "",
-    desc: "A Saas application that manages human resource management for organization, to be realeased soon.",
+    pics: depara,
+    title: "Depamount Website",
+    github: "https://github.com/pjmiles/deparamount",
+    live: "https://www.deparamount.biz/",
+    desc: "An ecommerce website",
   },
   {
     id: 2,
-    pics: crmApp,
-    title: "CRM Application",
-    github: "https://github.com/Gurugeeksroyalty-ltd",
-    live: "",
-    desc: "A Saas application with customer focus, to be realeased soon.",
-  },
-  {
-    id: 3,
     pics: movieSearch,
     title: "Movie Search",
     github: "https://github.com/pjmiles/movie-search",
