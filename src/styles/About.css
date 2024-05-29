@@ -7,7 +7,7 @@
     max-width: 90%; 
     margin: 10rem 5rem 20rem 5rem;
     /* padding: 20px 20px; */
-    text-align: justify;
+    text-align: center;
 
 }
 
@@ -28,12 +28,12 @@
     line-height: var(--line-height);
     padding: 0.3rem 0;
     font-size: var(--bold-font-size);
+    text-align: center;
 }
 
 .about-bio {
     color: var(--primary-color);
     line-height: var(--line-height);
-   
 }
 
 .about-bio span {
