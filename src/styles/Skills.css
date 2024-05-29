@@ -10,7 +10,7 @@
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     padding: 10px 10px;
-    max-width: 53rem;
+    max-width: 50rem;
     margin: auto;
 }
 .skills-header-text {
