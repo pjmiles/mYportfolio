@@ -1,7 +1,9 @@
 import { HashLink as NavLink } from "react-router-hash-link";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import logo from "../assets/pjmiles_logo.jpg"
 import "../styles/Navbar.css";
+
 const Navbar = () => {
   const [activeNav, setActiveNav] = useState("#");
   const [displayMenu, setDisplayMenu] = useState(false);
@@ -15,7 +17,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar ">
-      <h1 className="brand-name">Ponmile Adebisi</h1>
+      {/* <h1 className="brand-name">Ponmile Adebisi</h1> */}
+      <div className="logo-div">
+        <img src={logo} alt="logo" className="logo-image"/>
+      </div>
       <ul className={`${displayMenu ? "show" : ""}`}>
         <li className="nav-item">
           <NavLink
